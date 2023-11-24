@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+</head>
+<body>
+    <h2>신규 계정 생성 및 동의</h2>
+    <h3>아래 필수 항목을 입력하세요.</h3>
+
+    <form action="/signup" method="post">
+        <lable>Email 주소</lable><br>
+        <input type="mail" id="userId" name="userId" placeholder="Enter Email" required>
+        <button type="submit" onclick="checkId()">중복검사</button><br>
+        <lable>Password</lable><br>
+        <input type="password" id="password" name="password" placeholder="Password 입력" required><br>
+        <lable>confirm Password</lable><br>
+        <input type="password" id="passwordc" name="passwordc" placeholder="Password 확인" required><br><br>
+        <input type="checkbox">계정을 만드는데 당사의 모든 규정에 동의합니다.<br><br>
+        <input type="submit">등록</button>
+        <input type="cancel">취소</button>
+    </form>
+
+</body>
+</html>
