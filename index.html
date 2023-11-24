@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>What Shop Mall</title>
+</head>
+<body>
+
+  <header>
+    <h1>What Shop Mall</h1>
+    <nav>
+        <hr color = "red">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">MY ACCOUNT</a></li>
+        <li><a href="#">CONTACTS</a></li>
+      </ul>
+      <hr color = "red">
+    </nav>
+  </header>
+
+  <aside>
+    <h2>카테고리</h2>
+    <ul>
+      <li><a href="#" class="category-link" onclick="changePage('computer.html')">컴퓨터</a></li>
+      <li><a href="#" class="category-link" onclick="changePage('clothes.html')">의류</a></li>
+      <li><a href="#" class="category-link" onclick="changePage('music.html')">음악</a></li>
+      <li><a href="#" class="category-link" onclick="changePage('movie.html')">영화</a></li>
+      <li><a href="#" class="category-link" onclick="changePage('sports.html')">스포츠</a></li>
+
+    </ul>
+  </aside>
+
+    <!-- Product display area -->
+    <object id="main-object" data="computer.html" type="text/html"></object>
+
+  <aside class="right-section">
+    <h2>장바구니</h2>
+    <p>현재 장바구니에 물품이 없습니다.</p><br>
+    <button type="submit">쇼핑카트 보기</button>
+    <p></p><br>
+    <hr color="black">
+    <h2>Login</h2>
+    <form action="/signin" method="post">
+      <label>아이디:</label><br>
+      <input id="username" type="text" size = "15" required>
+      <br>
+      <br>
+      <label>패스워드:</label><br>
+      <input id="password" type="password" size = "15" required>
+      <br>
+      <br>
+      <input type="submit" value="로그인">
+      <input type="reset" value="초기화">
+    </form>
+      
+      <a href="#" onclick="openSignUpPopup()">회원가입</a>
+      <a href="#">비밀번호분실</a>
+
+    
+  </aside>
+</div>
+</body>
+<footer>
+    <p>Copyright & copy; 2023 CMY.</p>
+</footer>
+</html>
