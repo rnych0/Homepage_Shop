@@ -1,0 +1,77 @@
+  html {
+  font-size: 100%
+  }
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 50px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #main-object {
+    width: 67%;
+    height: 800px;
+    border: 1px solid #ccc;
+  }
+  aside {
+    float: left;
+    width: 10%;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  aside ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+  }
+  .category-link:hover {
+    background-color: #ddd;
+  }
+
+  .right-section {
+    width: 20%;
+    float: right;
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  .right-section a:hover {
+    text-decoration: underline;
+  }
+
+  .product-image {
+    border: 1px;
+    width: 200px;
+    height: 200px;
+  }
+
+  footer {
+    /* footer를 aside위에 올리기 위해 사용(부유객체) */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    color: #8a8c8f;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
